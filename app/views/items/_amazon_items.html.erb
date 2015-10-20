@@ -4,14 +4,12 @@
       <div class="item-box">
         <div class="image">
           <div class="img-wrap">
-            <% #TODO 商品画像 %>
-            <%= image_tag("no-image.png" , alt: item.get('ItemAttributes/Title')) %>
+            <img src ="<%= item.get('LargeImage/URL') %>" alt = "<%= item.get('ItemAttributes/Title') %>" onerror="this.src='/assets/no-image-2f7922d6985c563a71e4959548f4a6effc8913df44c39f0b4dc4273283b1337b.png'" /> 
           </div>
         </div>
         <div class="detail">
           <p class="title">
-            <% #TODO 商品タイトル %>
-            仮タイトル
+            <%= item.get('ItemAttributes/Title') %>
           </p>
         </div>
         <div class="action clearfix">
