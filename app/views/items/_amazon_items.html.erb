@@ -4,7 +4,7 @@
       <div class="item-box">
         <div class="image">
           <div class="img-wrap">
-            <img src ="<%= item.get('LargeImage/URL') %>" alt = "<%= item.get('ItemAttributes/Title') %>" onerror="this.src='/assets/no-image-2f7922d6985c563a71e4959548f4a6effc8913df44c39f0b4dc4273283b1337b.png'" /> 
+            <img src ="<%= item.get('LargeImage/URL') %>" alt = "<%= item.get('ItemAttributes/Title') %>" onerror="this.src= '<%= asset_path 'no-image.png' %>' " /> 
           </div>
         </div>
         <div class="detail">
